@@ -3,7 +3,7 @@ import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
 function SignUp() {
-  const [user, setUsers] = useState([]);
+  //const [user, setUsers] = useState([]);
   const [email, setEmail] = useState("");
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
@@ -15,7 +15,7 @@ function SignUp() {
 
   const fetchUsers = () => {
     axios.get("http://localhost:3001/register").then((res) => {
-      console.log(res.data);
+      // console.log(res.data);
     });
   };
 
@@ -39,8 +39,10 @@ function SignUp() {
   return (
     <div className="w-full h-screen flex">
       <div className="w-[50%] h-[100%] bg-[#1a1a1a] text-white flex justify-center items-center">
-        <form className="text-center border rounded-lg w-[600px] h-[400px] p-9">
+        <form
+          className="text-center border rounded-lg w-[600px] h-[400px] p-9"
           onSubmit={handleRegister}
+        >
           {/* Email Input */}
           <label>Email</label>
           <br />
@@ -70,7 +72,7 @@ function SignUp() {
           <br />
           <input
             className="w-[400px] h-[40px] rounded-xl bg-zinc-700 p-2"
-            type="text"
+            type="password"
             placeholder="Password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
