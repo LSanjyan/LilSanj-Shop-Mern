@@ -83,7 +83,6 @@ function SignUp() {
           <button
             className="w-[200px] h-[50px] border hover:bg-teal-900"
             type="submit"
-            type="submit"
           >
             Sign Up
           </button>
