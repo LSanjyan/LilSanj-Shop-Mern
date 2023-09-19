@@ -16,6 +16,22 @@ function Navbar() {
         <h1 className="text-3xl">Home</h1>
       </Link>
       <ul className="flex gap-6">
+        {/* Add clickable links for categories */}
+        <li>
+          <Link to="/new">New</Link>
+        </li>
+        <li>
+          <Link to="/best-sellers">Best Sellers</Link>
+        </li>
+        <li>
+          <Link to="/subjects">Subjects</Link>
+        </li>
+        <li>
+          <Link to="/color">Color</Link>
+        </li>
+        <li>
+          <Link to="/styles">Styles</Link>
+        </li>
         {isUserSignedIn ? (
           <>
             <Link to="/account">
