@@ -99,6 +99,79 @@ function Home() {
           </div>
         </div>
       </section>
+      {/* Additional content section */}
+      <section className="bg-gray-100 p-8">
+        <h1 className="text-3xl font-bold mb-4 text-center flex justify-center">
+          Featured Artwork
+        </h1>
+        <p className="text-gray-700">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+          varius ex quis metus condimentum, vel ultrices lorem luctus.
+          Suspendisse potenti. Nullam eget vehicula justo, nec condimentum erat.
+          Curabitur vitae dui vitae elit sollicitudin feugiat. Sed ut felis ac
+          justo vehicula venenatis. Nullam suscipit, justo sit amet gravida
+          facilisis, dui nisl fringilla augue, eu luctus ex lorem in leo. Aenean
+          nec viverra ipsum. Cras congue libero et ante dapibus, id feugiat
+          neque hendrerit. Sed sodales consectetur lorem, a pharetra neque
+          volutpat id. Nullam venenatis, ligula a finibus tristique, nisi neque
+          convallis tellus, eu malesuada sem lectus vel eros.
+        </p>
+      </section>
+      <footer className="bg-gray-900 text-white py-8">
+        <div className="container mx-auto flex flex-wrap">
+          <div className="w-full md:w-1/3 lg:w-1/4 px-4 mb-8">
+            <h3 className="text-xl font-semibold mb-4">Subscribe</h3>
+            <p>Subscribe to our newsletter for the latest updates.</p>
+            <div className="mt-4">
+              <input
+                type="email"
+                placeholder="Enter your email"
+                className="bg-gray-800 text-white rounded py-2 px-3 w-full"
+              />
+              <button className="bg-gray-500 hover:bg-gray-600 text-white py-2 px-4 mt-2 rounded">
+                Subscribe
+              </button>
+            </div>
+          </div>
+          <div className="w-full md:w-1/3 lg:w-1/4 px-4 mb-8">
+            <h3 className="text-xl font-semibold mb-4">Contact Us</h3>
+            <p>Email: contact@example.com</p>
+            <p>Phone: +123 456 7890</p>
+          </div>
+          <div className="w-full md:w-1/3 lg:w-1/4 px-4 mb-8">
+            <h3 className="text-xl font-semibold mb-4">About Us</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+          <div className="w-full md:w-1/3 lg:w-1/4 px-4 mb-8">
+            <h3 className="text-xl font-semibold mb-4">FAQ</h3>
+            <ul>
+              <li>
+                <a href="#">How to order?</a>
+              </li>
+              <li>
+                <a href="#">Delivery information</a>
+              </li>
+              <li>
+                <a href="#">Return policy</a>
+              </li>
+              <li>
+                <a href="#">Privacy policy</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div className="container mx-auto mt-8 flex justify-center">
+          <a href="#" className="mr-4 text-white hover:text-gray-500">
+            <i className="fab fa-facebook fa-2x"></i>
+          </a>
+          <a href="#" className="mr-4 text-white hover:text-gray-500">
+            <i className="fab fa-twitter fa-2x"></i>
+          </a>
+          <a href="#" className="text-white hover:text-red-500">
+            <i className="fab fa-instagram fa-2x"></i>
+          </a>
+        </div>
+      </footer>
     </div>
   );
 }

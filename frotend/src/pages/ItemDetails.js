@@ -5,15 +5,20 @@ function ItemDetails() {
   const { index } = useParams();
 
   const itemDetails = {
-    1: {
+    0: {
       name: "Item 1",
       size: "Medium",
       price: "700.00",
     },
-    2: {
+    1: {
       name: "Item 11",
       size: "Medium",
       price: "300.00",
+    },
+    2: {
+      name: "Item 3",
+      size: "Medium",
+      price: "500.00",
     },
     3: {
       name: "Item 3",
