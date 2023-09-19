@@ -11,7 +11,7 @@ function Navbar() {
   };
 
   return (
-    <nav className="flex justify-around p-3 border-b border-zinc-800 items-center bg-[#1a1a1a]/90 text-zinc-300">
+    <nav className="flex justify-around p-3 border-b border-zinc-800 items-center bg-[#1a1a1a]/90 text-[#ddd5d5]">
       <Link to="/">
         <h1 className="text-3xl">Home</h1>
       </Link>

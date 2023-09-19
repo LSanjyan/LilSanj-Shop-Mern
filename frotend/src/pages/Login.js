@@ -40,7 +40,7 @@ function Login() {
 
   return (
     <div className="w-full h-screen flex">
-      <div className="w-[100%] h-[100%] bg-gray-300 text-black flex justify-center items-center">
+      <div className="w-[100%] h-[100%] bg-[#ddd5d5] text-black flex justify-center items-center">
         <form
           className="text-center border border-gray-800 rounded-lg w-[600px] h-[400px] p-9"
           onSubmit={handleLogin}
@@ -49,7 +49,7 @@ function Login() {
           <label>Username</label>
           <br />
           <input
-            className="w-[400px] h-[40px] rounded-xl bg-zinc-400 p-2"
+            className="w-[400px] h-[40px] rounded-xl text-[#ddd5d5] bg-zinc-700 p-2"
             type="text"
             placeholder="Username"
             value={username}
@@ -61,7 +61,7 @@ function Login() {
           <label>Password</label>
           <br />
           <input
-            className="w-[400px] h-[40px] rounded-xl bg-zinc-400 p-2"
+            className="w-[400px] h-[40px] rounded-xl text-[#ddd5d5] bg-zinc-700 p-2"
             type="password"
             placeholder="Password"
             value={password}
@@ -71,7 +71,7 @@ function Login() {
           <br />
           {/* Button */}
           <button
-            className="w-[200px] h-[50px]  rounded-lg border border-gray-800 hover:bg-gray-700"
+            className="w-[200px] h-[50px]  rounded-lg border border-gray-800 hover:bg-zinc-700"
             type="submit"
           >
             Login

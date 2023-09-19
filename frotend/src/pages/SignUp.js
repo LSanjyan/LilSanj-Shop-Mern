@@ -38,16 +38,16 @@ function SignUp() {
 
   return (
     <div className="w-full h-screen flex">
-      <div className="w-[100%] h-[100%] bg-[#1a1a1a] text-white flex justify-center items-center">
+      <div className="w-[100%] h-[100%] bg-[#ddd5d5] text-black flex justify-center items-center">
         <form
-          className="text-center border rounded-lg w-[600px] h-[400px] p-9"
+          className="text-center border border-zinc-700 rounded-lg w-[600px] h-[400px] p-9"
           onSubmit={handleRegister}
         >
           {/* Email Input */}
           <label>Email</label>
           <br />
           <input
-            className="w-[400px] h-[40px] rounded-xl bg-zinc-700 p-2"
+            className="w-[400px] h-[40px] rounded-xl text-[#ddd5d5] bg-zinc-700 p-2"
             type="text"
             placeholder="Email"
             value={email}
@@ -59,7 +59,7 @@ function SignUp() {
           <label>Username</label>
           <br />
           <input
-            className="w-[400px] h-[40px] rounded-xl bg-zinc-700 p-2"
+            className="w-[400px] h-[40px] rounded-xl text-[#ddd5d5] bg-zinc-700 p-2"
             type="text"
             placeholder="Username"
             value={username}
@@ -71,7 +71,7 @@ function SignUp() {
           <label>Password</label>
           <br />
           <input
-            className="w-[400px] h-[40px] rounded-xl bg-zinc-700 p-2"
+            className="w-[400px] h-[40px] rounded-xl text-[#ddd5d5] bg-zinc-700 p-2"
             type="password"
             placeholder="Password"
             value={password}
@@ -81,7 +81,7 @@ function SignUp() {
           <br />
           {/*Button*/}
           <button
-            className="w-[200px] h-[50px] border hover:bg-teal-900"
+            className="w-[200px] h-[50px] border border-gray-800 rounded-xl hover:bg-zinc-700"
             type="submit"
           >
             Sign Up

@@ -19,7 +19,7 @@ function Home() {
           className="w-full h-full object-cover"
         />
       </section>
-      <section className="bg-gray-100 p-8">
+      <section className="bg-[#ddd5d5] p-8">
         {/* Search Bar */}
         <div className="max-w-md mx-auto">
           <form onSubmit={handleSearchSubmit} className="flex items-center">
@@ -31,7 +31,7 @@ function Home() {
             />
             <button
               type="submit"
-              className="bg-gray-300 text-gray-800 p-2 rounded-r-full hover:bg-gray-400 focus:outline-none focus:ring focus:border-blue-500"
+              className="bg-[#c5bcbc] text-gray-800 p-2 rounded-r-full hover:bg-[#9e9696] focus:outline-none focus:ring focus:border-blue-500"
             >
               Search
             </button>
@@ -63,7 +63,7 @@ function Home() {
                 className="w-full h-auto rounded-t-lg"
               />
               <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity">
-                <button className="text-white absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-grey-500 hover:bg-grey-600 rounded-full px-4 py-2 transition-colors">
+                <button className="text-white absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2   rounded-full px-4 py-2 transition-colors">
                   View Details
                 </button>
               </div>
@@ -78,7 +78,7 @@ function Home() {
               className="w-full h-auto rounded-t-lg"
             />
             <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity">
-              <button className="text-white absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-blue-500 hover:bg-blue-600 rounded-full px-4 py-2 transition-colors">
+              <button className="text-white absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 rounded-full px-4 py-2 transition-colors">
                 View Details
               </button>
             </div>
