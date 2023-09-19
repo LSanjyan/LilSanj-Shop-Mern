@@ -6,8 +6,10 @@ const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 require("dotenv").config();
 const User = require("./models/userModel");
+//const path = require("path");
 
 const SECRET_KEY = "super-secret-key";
+//app.use("/uploads", express.static(path.join(__dirname, "uploads")));
 
 // connect to express app
 const app = express();

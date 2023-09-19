@@ -3,7 +3,7 @@ import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
 function Login() {
-  const [users, setUsers] = useState([]);
+  // const [users, setUsers] = useState([]);
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const navigate = useNavigate();
@@ -40,16 +40,16 @@ function Login() {
 
   return (
     <div className="w-full h-screen flex">
-      <div className="w-[50%] h-[100%] bg-[#1a1a1a] text-white flex justify-center items-center">
+      <div className="w-[100%] h-[100%] bg-gray-300 text-black flex justify-center items-center">
         <form
-          className="text-center border rounded-lg w-[600px] h-[400px] p-9"
+          className="text-center border border-gray-800 rounded-lg w-[600px] h-[400px] p-9"
           onSubmit={handleLogin}
         >
           {/*Username Input */}
           <label>Username</label>
           <br />
           <input
-            className="w-[400px] h-[40px] rounded-xl bg-zinc-700 p-2"
+            className="w-[400px] h-[40px] rounded-xl bg-zinc-400 p-2"
             type="text"
             placeholder="Username"
             value={username}
@@ -61,7 +61,7 @@ function Login() {
           <label>Password</label>
           <br />
           <input
-            className="w-[400px] h-[40px] rounded-xl bg-zinc-700 p-2"
+            className="w-[400px] h-[40px] rounded-xl bg-zinc-400 p-2"
             type="password"
             placeholder="Password"
             value={password}
@@ -71,16 +71,16 @@ function Login() {
           <br />
           {/* Button */}
           <button
-            className="w-[200px] h-[50px] border hover:bg-teal-900"
+            className="w-[200px] h-[50px]  rounded-lg border border-gray-800 hover:bg-gray-700"
             type="submit"
           >
             Login
           </button>
         </form>
       </div>
-      <div className="w-[50%] h-[100%] flex justify-center items-center bg-teal-800">
+      {/*<div className="w-[50%] h-[100%] flex justify-center items-center bg-teal-800">
         <h2 className="text-3xl text-white ">Login</h2>
-      </div>
+  </div>*/}
     </div>
   );
 }
