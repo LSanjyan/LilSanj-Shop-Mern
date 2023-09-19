@@ -6,6 +6,7 @@ const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 require("dotenv").config();
 const User = require("./models/userModel");
+//const itemRoutes = require("./routes/items");
 //const path = require("path");
 
 const SECRET_KEY = "super-secret-key";
@@ -84,6 +85,8 @@ app.post("/login", async (req, res) => {
     res.status(500).json({ error: "Error logging in" });
   }
 });
+
+//app.use("/api/items", itemRoutes);
 
 const port = process.env.PORT || 3001;
 app.listen(port, () => console.log(`Express app running on port ${port}`));
