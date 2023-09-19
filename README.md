@@ -1,3 +1,4 @@
 # LilSanj-Shop-Mern
-Mern stack application with SignIn, Login, Sign out funtionality. 
-I used tailwindcss for framework. 
+Frontend: React, Tailwind CSS
+Backend: Node.js, Express, MongoDB
+Authentication: JWT (JSON Web Tokens)
